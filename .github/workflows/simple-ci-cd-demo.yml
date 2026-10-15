@@ -12,3 +12,9 @@ jobs :
        steps :
          - name : hi
            run : echo "hello master" 
+     job2 :
+        needs : job1
+        runs-on : ubuntu-latest
+        steps :
+          - name : hi 2
+            run : echo "hello doctor !"
