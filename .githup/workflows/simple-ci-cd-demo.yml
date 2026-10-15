@@ -1,0 +1,14 @@
+name : simple-ci-cd-demo
+
+
+on :
+  push:
+    branche :
+      - main
+
+jobs :
+     job1 :
+       runs-on : ubuntu-Latest
+       steps :
+         - name : hi
+           run : echo "hello master" 
